@@ -1,7 +1,8 @@
 const router = require('express').Router();
-// var mysql = require('mysql');
 const apiRoutes = require('./api');
+const htmlRoutes = require('./htmlRoutes');
 
+router.use('/', htmlRoutes);
 router.use('/api', apiRoutes);
 
 module.exports = router;
