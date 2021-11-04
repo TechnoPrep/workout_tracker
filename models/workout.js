@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const workoutSchema = new Schema({
-  date: {
+  day: {
     type: Date,
     default: Date.now
   },
@@ -29,6 +29,9 @@ const workoutSchema = new Schema({
         type: Number
       },
       sets: {
+        type: Number
+      },
+      distance: {
         type: Number
       }
     }
